@@ -1,0 +1,71 @@
+#app-root {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+}
+
+.radioWrap {
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+.table,
+tr,
+td,
+th {
+    border: 0.5px solid lightgray;
+    border-collapse: collapse;
+}
+
+.table {
+    margin-top: 10px;
+    width: 80%;
+    text-align: center;
+}
+
+th {
+    padding: 15px 0 15px 0;
+    background-color: rgb(67, 161, 78);
+    color: white;
+}
+
+.table tr:nth-child(odd) {
+    background-color: rgb(242, 242, 242);
+}
+
+.table tr:nth-child(even) {
+    background-color: white;
+}
+
+.table tr:hover {
+    background-color: rgb(226, 226, 226);
+}
+
+.arrowUp,
+.arrowDown,
+.arrowDefault {
+    color: yellow;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.arrowUp::after {
+    content: "\2191";
+}
+
+.arrowDown::after {
+    content: "\2193";
+}
+
+.arrowDefault::after {
+    content: '↕';
+}

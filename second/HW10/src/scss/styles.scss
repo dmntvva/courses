@@ -1,0 +1,52 @@
+@import 'variables.scss';
+@import 'buttons.scss';
+.hidden,
+button.hidden {
+    display: none;
+}
+body{
+    margin: 7% auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    #root{
+    width: 90%;
+    margin: $margauto;
+    padding: 5% 0;
+    background-color: rgb(241, 240, 220);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    }
+}
+#alertMessage {
+    font-size: 30px;
+    height: 30px;
+    width: 60%;
+    margin: $margauto;
+}
+
+.tweetItems{
+    width: 100%;
+}
+.tweet{
+    list-style: none;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+li{
+    margin: 50px;
+}
+
+#list{
+    width: 50%;
+    height: 50%;
+    overflow-y: auto;
+    padding: 0;
+    margin: $margauto;
+}

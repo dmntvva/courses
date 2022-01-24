@@ -1,0 +1,8 @@
+.hidden,
+button.hidden {
+    display: none;
+}
+
+#alertMessage {
+    background-color: red;
+}

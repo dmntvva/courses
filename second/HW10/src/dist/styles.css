@@ -1,0 +1,89 @@
+.delete {
+  margin: 0;
+}
+
+button {
+  width: 100px;
+  height: 30px;
+  background-color: #dda6a6;
+  border: none;
+}
+
+.like {
+  background-color: #7e7e7e;
+}
+
+.unlike {
+  background-color: #ff4949;
+}
+
+.formButtons button,
+#navigationButtons button {
+  height: 60px;
+  width: 150px;
+  margin-top: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+#saveModifiedItem, #addTweet {
+  background-color: #84d384;
+}
+
+.tweet button {
+  border-radius: 10px;
+}
+
+.hidden,
+button.hidden {
+  display: none;
+}
+
+body {
+  margin: 7% auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+body #root {
+  width: 90%;
+  margin: 0 auto;
+  padding: 5% 0;
+  background-color: #f1f0dc;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#alertMessage {
+  font-size: 30px;
+  height: 30px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.tweetItems {
+  width: 100%;
+}
+
+.tweet {
+  list-style: none;
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+li {
+  margin: 50px;
+}
+
+#list {
+  width: 50%;
+  height: 50%;
+  overflow-y: auto;
+  padding: 0;
+  margin: 0 auto;
+}

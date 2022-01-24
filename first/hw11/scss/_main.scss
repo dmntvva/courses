@@ -1,0 +1,221 @@
+@mixin rectangle ($height, $width, $left, $content) {
+    content: $content;
+    left: $left;
+    height: $height;
+    width: $width;
+    background-color: $rectangle;
+    position: absolute;
+}
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin link {
+    font-size: 12px;
+    color: $grayText;
+}
+
+@mixin button {
+    height: 40px;
+    width: 120px;
+    border-radius: $borderRadius;
+    border: 0.5px solid $btnColor;
+    background-color: $btnColor;
+    color: white;
+}
+
+body {
+    background-color: $bg;
+    margin: 0;
+    color: $txt;
+    position: relative;
+    font-family: map-get($map, "titles");
+}
+
+.landing-logo {
+    @include flexCenter;
+    font-family: map-get($map, "titles");
+    height: 8%;
+    width: 10%;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    span {
+        font-size: 8px;
+        font-family: map-get($map, "text");
+    }
+    p {
+        font-weight: 600;
+        font-family: map-get($map, "text");
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        letter-spacing: 0.5px;
+    }
+}
+
+.header {
+    &_heading {
+        font-size: 60px;
+        font-weight: bold;
+        width: 500px;
+        height: 100px;
+        line-height: 1;
+        z-index: 500;
+        position: relative;
+        &::after {
+            @include rectangle(50px, 250px, 0, "awesome");
+            @extend .header_heading;
+            line-height: 0.5;
+            top: 75px;
+        }
+    }
+    &_text {
+        width: 470px;
+        height: 110px;
+        font-size: 13px;
+        line-height: 1.5;
+        font-family: map-get($map, "text");
+    }
+    &_button {
+        @include button;
+    }
+    &-wrap {
+        height: 560px;
+        background-position-y: 45%;
+        padding: 15px 200px;
+        font-family: map-get($map, "titles");
+        background-size: cover;
+        background-image: $bgImage;
+        border-bottom-right-radius: 50%;
+        position: relative;
+    }
+    .login {
+        color: white;
+        margin-left: 100px;
+        &:visited {
+            color: white;
+        }
+    }
+}
+
+.section {
+    text-align: center;
+    padding-bottom: 200px;
+    &_banner_button {
+        @include button;
+    }
+    &_link {
+        @include link;
+    }
+    &_card {
+        @include flexCenter;
+        background-color: $sectionBg;
+        margin: 10px;
+        height: 250px;
+        border-radius: $borderRadius;
+        padding: 10px;
+        color: white;
+        &_img {
+            height: 100%;
+            width: 100%;
+        }
+        &_right_container {
+            text-align: center;
+            padding: 20px;
+        }
+        &_heading {
+            font-weight: 600;
+        }
+        &_wrap {
+            width: 60%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        &_text {
+            @extend .section_link;
+            text-align: justify;
+            padding: 30px;
+            font-family: map-get($map, "text");
+        }
+    }
+    &_text {
+        font-weight: 600;
+        font-size: 30px;
+        position: relative;
+        &::after {
+            @include rectangle(auto, auto, 50.5%, "adventure");
+            @extend .section_text;
+            background-color: $rectangle;
+            position: absolute;
+        }
+    }
+    &_link:visited {
+        color: $grayText;
+    }
+    &_banner {
+        background: linear-gradient(to right, $btnColor, $blue);
+        width: 70%;
+        margin: 100px auto 0;
+        border-radius: $borderRadius;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 100px;
+        text-align: start;
+        &_heading {
+            font-weight: bold;
+            font-size: 20px;
+            margin: 0;
+            position: relative;
+            &::after {
+                @include rectangle(auto, auto, 29.5%, "start");
+                @extend .section_banner_heading;
+                background-color: $rectangle;
+                position: absolute;
+            }
+        }
+        &_text {
+            margin-top: 5px;
+            font-size: 12px;
+            color: $grayText;
+            font-family: map-get($map, "text");
+            &_wrap {
+                @include flexCenter;
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+.footer {
+    height: 250px;
+    width: 100%;
+    z-index: -1;
+    background-color: $sectionBg;
+    position: absolute;
+    bottom: 0;
+    &-wrap {
+        padding: 100px 200px 15px;
+        color: $grayText;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &_text {
+        text-align: justify;
+        width: 20%;
+        font-family: map-get($map, "text");
+    }
+    &_text,
+    &-cr {
+        font-size: 12px;
+    }
+}

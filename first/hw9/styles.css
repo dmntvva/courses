@@ -1,0 +1,163 @@
+/* START: Task 1 Styles */
+
+#task1 {
+    margin-bottom: 20px;
+}
+
+.table {
+    width: 300px;
+    height: 300px;
+    border: 0.5px solid black;
+}
+
+tr,
+td {
+    width: 100px;
+    height: 100px;
+    border: 0.5px solid black;
+    text-align: center;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+
+/* END: Task 1 Styles */
+
+
+/* START: Task 2 Styles */
+
+input {
+    width: 300px;
+    height: 35px;
+}
+
+button {
+    height: 38px;
+    margin-left: 5px;
+}
+
+.inputDefault {
+    border: 1px solid black;
+}
+
+.inputDefault:active {
+    border: 1.5px solid black;
+}
+
+.inputError {
+    border: 1px solid red;
+}
+
+.inputError:active,
+.inputError:focus {
+    border-color: red;
+}
+
+.success {
+    width: 352px;
+    height: 40px;
+    background-color: green;
+    color: white;
+    border: 0.5px solid black;
+}
+
+.error {
+    width: 352px;
+    height: 40px;
+    background-color: rgb(255, 100, 100);
+    color: white;
+    border: 0.5px solid black;
+}
+
+p {
+    display: table-cell;
+    padding-left: 10px;
+    vertical-align: middle;
+}
+
+
+/* END: Task 2 Styles */
+
+
+/* START: Task 3 Styles */
+
+#task3 {
+    width: 600px;
+    position: relative;
+}
+
+#wrapper {
+    width: 600px;
+    height: 330px;
+    position: relative;
+    z-index: 10;
+}
+
+.court {
+    margin: 0;
+    padding: 0;
+    width: 600px;
+    height: 330px;
+    position: relative;
+}
+
+.ball {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.scoringZoneA,
+.scoringZoneB {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.scoringZoneA {
+    right: 32px;
+}
+
+.scoringZoneB {
+    left: 32px;
+}
+
+.blueScore {
+    color: blue;
+}
+
+.redScore {
+    color: red;
+}
+
+.teamBscore {
+    float: right;
+}
+
+.score {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* END: Task 3 Styles */

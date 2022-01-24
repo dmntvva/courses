@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>AJAX</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+    <style>
+        .spinner-wrap {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%);
+        }
+        
+        .hidden {
+            display: none;
+        }
+        
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border-top: 1px solid black;
+            animation: rotate 1s linear infinite;
+        }
+        
+        @keyframes rotate {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="spinner-wrap" id="spinner">
+        <div class="spinner"></div>
+    </div>
+    <div id="root"></div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

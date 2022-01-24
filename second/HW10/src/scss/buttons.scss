@@ -1,0 +1,30 @@
+@import 'variables.scss';
+.delete{
+    margin: 0;
+}
+button{
+    width: 100px;
+    height: 30px;
+    background-color: $negative;
+    border: none;
+}
+.like{
+    background-color: $unliked;
+}
+.unlike{
+    background-color: $liked;
+}
+.formButtons button,
+#navigationButtons button{
+    height: 60px;
+    width: 150px;
+    margin-top: 10px;
+    border-radius: $border-r;
+    font-size: 20px;
+}
+#saveModifiedItem, #addTweet{
+    background-color: $positive;
+}
+.tweet button{
+    border-radius: $border-r;
+}

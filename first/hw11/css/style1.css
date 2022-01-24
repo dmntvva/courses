@@ -1,0 +1,183 @@
+body {
+  background-color: white;
+  margin: 0;
+  color: #2c2f3c;
+  position: relative;
+  font-family: "Source Sans Pro", sans-serif; }
+
+.landing-logo {
+  display: flex;
+  justify-content: center;
+  font-family: "Source Sans Pro", sans-serif;
+  height: 8%;
+  width: 10%;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  position: relative; }
+  .landing-logo span {
+    font-size: 8px;
+    font-family: "Hind", sans-serif; }
+  .landing-logo p {
+    font-weight: 600;
+    font-family: "Hind", sans-serif;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 0.5px; }
+
+.header_heading, .header_heading::after {
+  font-size: 60px;
+  font-weight: bold;
+  width: 500px;
+  height: 100px;
+  line-height: 1;
+  z-index: 500;
+  position: relative; }
+  .header_heading::after {
+    content: "awesome";
+    left: 0;
+    height: 50px;
+    width: 250px;
+    background-color: #14a0c7;
+    position: absolute;
+    line-height: 0.5;
+    top: 75px; }
+.header_text {
+  width: 470px;
+  height: 110px;
+  font-size: 13px;
+  line-height: 1.5;
+  font-family: "Hind", sans-serif; }
+.header_button {
+  height: 40px;
+  width: 120px;
+  border-radius: 4px;
+  border: 0.5px solid #699900;
+  background-color: #699900;
+  color: white; }
+.header-wrap {
+  height: 560px;
+  background-position-y: 45%;
+  padding: 15px 200px;
+  font-family: "Source Sans Pro", sans-serif;
+  background-size: cover;
+  background-image: url(../img/m-h-day.jpg);
+  border-bottom-right-radius: 50%;
+  position: relative; }
+.header .login {
+  color: white;
+  margin-left: 100px; }
+  .header .login:visited {
+    color: white; }
+
+.section {
+  text-align: center;
+  padding-bottom: 200px; }
+  .section_banner_button {
+    height: 40px;
+    width: 120px;
+    border-radius: 4px;
+    border: 0.5px solid #699900;
+    background-color: #699900;
+    color: white; }
+  .section_link, .section_card_text {
+    font-size: 12px;
+    color: #bbbec9; }
+  .section_card {
+    display: flex;
+    justify-content: center;
+    background-color: #21232e;
+    margin: 10px;
+    height: 250px;
+    border-radius: 4px;
+    padding: 10px;
+    color: white; }
+    .section_card_img {
+      height: 100%;
+      width: 100%; }
+    .section_card_right_container {
+      text-align: center;
+      padding: 20px; }
+    .section_card_heading {
+      font-weight: 600; }
+    .section_card_wrap {
+      width: 60%;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      flex-direction: column; }
+    .section_card_text {
+      text-align: justify;
+      padding: 30px;
+      font-family: "Hind", sans-serif; }
+  .section_text, .section_text::after {
+    font-weight: 600;
+    font-size: 30px;
+    position: relative; }
+    .section_text::after {
+      content: "adventure";
+      left: 50.5%;
+      height: auto;
+      width: auto;
+      background-color: #14a0c7;
+      position: absolute;
+      background-color: #14a0c7;
+      position: absolute; }
+  .section_link:visited, .section_card_text:visited {
+    color: #bbbec9; }
+  .section_banner {
+    background: linear-gradient(to right, #699900, #2c5ada);
+    width: 70%;
+    margin: 100px auto 0;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    text-align: start; }
+    .section_banner_heading, .section_banner_heading::after {
+      font-weight: bold;
+      font-size: 20px;
+      margin: 0;
+      position: relative; }
+      .section_banner_heading::after {
+        content: "start";
+        left: 29.5%;
+        height: auto;
+        width: auto;
+        background-color: #14a0c7;
+        position: absolute;
+        background-color: #14a0c7;
+        position: absolute; }
+    .section_banner_text {
+      margin-top: 5px;
+      font-size: 12px;
+      color: #bbbec9;
+      font-family: "Hind", sans-serif; }
+      .section_banner_text_wrap {
+        display: flex;
+        justify-content: center;
+        flex-direction: column; }
+
+.footer {
+  height: 250px;
+  width: 100%;
+  z-index: -1;
+  background-color: #21232e;
+  position: absolute;
+  bottom: 0; }
+  .footer-wrap {
+    padding: 100px 200px 15px;
+    color: #bbbec9;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+  .footer_text {
+    text-align: justify;
+    width: 20%;
+    font-family: "Hind", sans-serif; }
+  .footer_text, .footer-cr {
+    font-size: 12px; }

@@ -1,0 +1,148 @@
+.tm-box-bg-title:hover {
+    background-color: #87CEFA;
+    color: white;
+    font-weight: bold;
+}
+
+p::first-letter {
+    font-size: 30px;
+    color: #87CEFA;
+}
+
+section p {
+    line-height: 35px;
+    text-indent: 30px;
+}
+
+.box p {
+    text-indent: 0;
+}
+
+.box-work {
+    padding: 10px;
+}
+
+.box-work:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+.tm-banner {
+    border: 29px solid #f5f5f5;
+    padding: 0;
+}
+
+.tm-nav-item:hover {
+    background-color: #f5f5f5;
+}
+
+.tm-banner,
+.tm-content-box,
+.tm-main-nav,
+.blocks {
+    box-shadow: 0 0 10px rgb(145, 145, 145);
+}
+
+.blocks .tm-content-box {
+    box-shadow: none;
+}
+
+.tm-content-box.flex-2-col {
+    display: flex;
+    align-items: center;
+}
+
+section::before {
+    content: "";
+    width: 300px;
+    height: 50px;
+    background: #87CEFA;
+    position: absolute;
+    clip-path: polygon(100% 0, 0 0, 0 70%);
+}
+
+section {
+    position: relative;
+}
+
+.carousel .tm-section-title {
+    color: gainsboro;
+    letter-spacing: 5px;
+}
+
+h2+p {
+    font-style: italic;
+}
+
+.padding-medium a {
+    color: black;
+}
+
+.padding-medium a:visited {
+    text-decoration: underline;
+}
+
+.padding-medium a:hover {
+    border-bottom: double;
+    text-decoration: none;
+    color: lightskyblue;
+}
+
+.text {
+    position: relative;
+}
+
+.text::after {
+    content: " New";
+    font-size: 0.7em;
+    color: red;
+    position: absolute;
+    top: -4px;
+    text-decoration: none;
+}
+
+.mandatory-field::after {
+    content: "*";
+    font-size: 1.2em;
+    font-weight: bold;
+    color: red;
+    position: absolute;
+}
+
+.submit-btn {
+    height: 45px;
+    width: 130px;
+    background-color: #ffffff;
+    color: lightskyblue;
+    border-color: lightskyblue;
+    border-radius: 0;
+    float: right;
+}
+
+.submit-btn:hover {
+    background-color: lightskyblue;
+    border-color: lightskyblue;
+    color: white;
+}
+
+@media print {
+    @page {
+        margin: 3cm;
+    }
+    .tm-sidebar,
+    section+section,
+    #about,
+    section::before {
+        display: none;
+    }
+    .tm-banner {
+        width: 90%;
+        border: none;
+        margin: 0 auto;
+    }
+    h2.tm-section-title {
+        color: blue;
+    }
+    .flex-item img {
+        width: 300px;
+    }
+}

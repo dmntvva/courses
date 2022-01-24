@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Homework 9 - JS DOM Events</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="task1">
+        <table class="table" id="table">
+            <tr>
+                <td class="firstCol">Cell</td>
+                <td>Cell</td>
+                <td>Cell</td>
+            </tr>
+            <tr>
+                <td class="firstCol">Cell</td>
+                <td>Cell</td>
+                <td class="special">Special cell</td>
+            </tr>
+            <tr>
+                <td class="firstCol">Cell</td>
+                <td>Cell</td>
+                <td>Cell</td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="task2">
+        <form class="form" id="form">
+            <input class="inputDefault" id="inp" type="text" placeholder="Type phone number in format +380*********">
+            <button class="buttonDefault" id="btn" disabled>Send</button>
+        </form>
+    </div>
+
+    <div id="task3">
+        <div id="wrapper">
+            <img class="court" id="court" src="assets/court.png" alt="Court" width="600" height="330">
+            <img class="ball" id="ball" src="assets/ball.png" alt="Ball" width="40" height="40">
+            <span class="scoringZoneA" id="ringA"></span>
+            <span class="scoringZoneB" id="ringB"></span>
+        </div>
+        <span class="teamAscore" id="scoreA"></span>
+        <span class="teamBscore" id="scoreB"></span>
+        <p class="score hidden" id="score"></p>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>

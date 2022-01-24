@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    background: #181818;
+}
+
+.inputBox {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 20%;
+}
+
+.message,
+.button {
+    height: 50px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.message {
+    background-color: rgba(255, 255, 255, 0.774);
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.message:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.button {
+    color: #181818;
+    background-color: rgb(75, 202, 154);
+    font-size: 20px;
+    border: none;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: rgb(63, 167, 127);
+}
+
+.messageBox {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    overflow-y: scroll;
+}
+
+.left,
+.right {
+    width: 50%;
+    color: rgb(255, 255, 255);
+    padding: 5%;
+    margin: 10px 10px;
+    border: 1px solid rgb(185, 185, 185);
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    border-radius: 50px 50px 50px 0;
+    background-color: rgb(75, 202, 154);
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    border-radius: 50px 50px 0 50px;
+    background-color: rgb(47, 121, 92);
+}
+
+.name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.messageText {
+    line-height: 1px;
+}
+
+.left .messageDate {
+    text-align: left;
+}
+
+.right .messageDate {
+    text-align: right;
+}
+
+.messageDate {
+    font-size: 10px;
+    color: #181818;
+}

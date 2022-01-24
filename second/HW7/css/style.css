@@ -1,0 +1,69 @@
+.main{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.calculator{
+    width: 200px;
+    height: 350px;
+    padding: 3%;
+    background: rgb(221, 221, 221);
+}
+.display{
+    width: 100%;
+    height: 30px;
+    box-sizing: border-box;
+    margin: 5px 0;
+    text-align: end;
+    padding: 0 5px;
+}
+.buttons{
+    width: 100%;
+    height: 90%;
+    border: 1px solid gray;
+    box-sizing: border-box;
+}
+td{
+    border: 2px solid gray;
+}
+td{
+    padding: 0;
+}
+.button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-weight: bold;
+    background-color: #fff;
+}
+.button:hover{
+    background-color: rgb(240, 240, 240);
+}
+.equal:hover{
+    background-color: rgb(60, 80, 145);
+}
+.equal{
+    background-color: rgb(72, 95, 170);
+    border: none;
+}
+.logsBlock{
+    width: 200px;
+    height: 350px;
+    margin: 5px 0;
+    padding: 0 5px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+.redColor{
+    background-color: red;
+}
+.toggleButton:hover{
+    background-color: red;
+}
+.closeButton:hover{
+    color: red;
+}
+.err{
+    color: red;
+}

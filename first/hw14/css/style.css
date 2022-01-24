@@ -1,0 +1,23 @@
+body {
+    font-family: 'Roboto';
+}
+
+.active {
+    color: #111;
+}
+
+.footer,
+.grey {
+    background-color: #525252;
+    color: white;
+}
+
+.btn {
+    background-color: coral;
+    color: white;
+}
+
+.header-btn {
+    background-color: #525252;
+    color: white;
+}
